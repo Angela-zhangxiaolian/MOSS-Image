@@ -13,3 +13,4 @@ Documentation = "https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README
 [tool.comfy]
 PublisherId = "mosi"
 DisplayName = "MOSS-Image"
+Banner = "https://raw.githubusercontent.com/OpenMOSS/MOSS-Image/main/assets/teaser.webp"
