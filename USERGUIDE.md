@@ -106,6 +106,82 @@ We have found that simple SFT can enable features such as GIF generation and ref
 
 If you post-train MOSS-Image-Base yourself, keep the text encoder frozen. Do not fine-tune it.
 
+### Image Captioning
+
+If you post-train MOSS-Image-Base yourself, you can use the following image captioning approach as a reference.
+
+#### Caption Prompt
+
+```text
+You are an image recaptioner. Return exactly one JSON object with this schema:
+{
+  "caption": {
+    "long": "a detailed image description, including all non-watermark visible text",
+    "medium": "a one-paragraph image description",
+    "short": "a one-sentence image description"
+  },
+  "watermark": [
+    {"box_2d": [y_min, x_min, y_max, x_max], "label": "watermark text"}
+  ],
+  "borders": ["none"]
+}
+
+Rules:
+- caption.long:
+    - Describe the composition, key subjects, actions, setting, colors, lighting, and artistic style in detail. Include only information visible in the image.
+    - Preserve visible text exactly, excluding watermarks. Do not translate, paraphrase, romanize, or normalize image text.
+    - Describe text layout as much as possible: line breaks, ordering, relative position, alignment, size hierarchy, font/style, color, spacing, and how text blocks are arranged.
+- caption.medium: compress long into one paragraph.
+- caption.short: summarize the main subject, action, or relationship in one sentence.
+- Do not describe watermarks in any caption field. Record them only in watermark.
+- watermark:
+    - Use normalized 0–1000 [y_min, x_min, y_max, x_max] coordinates relative to the full image.
+    - Set label to the visible watermark text, or a short description if unreadable.
+    - Use [] if there are no watermarks.
+- borders:
+    - Record evident borders or margins using one or more of "left", "right", "up", and "down".
+    - Use ["none"] if there are no evident borders or margins. Do not combine "none" with other directions.
+- All three caption fields must be non-empty strings.
+- Treat the original caption as a reference. Correct any claims that are not supported by the image.
+- Return only the JSON object, without Markdown or explanations.
+
+Here is the original caption reference:
+{{reference}}
+```
+
+#### Caption Model
+
+We have tried several VLMs for captioning images for MOSS-Image-Base. We recommend Gemma 4, Qwen 3.5 27B, or Qwen 3.5 35B-A3B. We generally use the following request format:
+
+```python
+body = {
+    "model": model_name,
+    "messages": [
+        {
+            "role": "user",
+            "content": [
+                {"type": "text", "text": prompt_text},
+                {"type": "image_url", "image_url": {"url": image_url}},
+            ],
+        }
+    ],
+    "n": 1,
+    "stream": False,
+    "max_tokens": 16384,
+    "temperature": 1,
+    "top_p": 0.95,
+    "extra_body": {"chat_template_kwargs": {"enable_thinking": True}},
+}
+```
+
+We recommend enabling thinking mode for more accurate captions.
+
+#### Tips
+
+1. Adding relevant world knowledge can improve captions.
+2. An agentic captioning pipeline can achieve high caption accuracy.
+3. Better understanding helps improve generation.
+
 ### Few-Step Distillation
 
 We are actively working on few-step distillation methods such as DMD. Stay tuned.
