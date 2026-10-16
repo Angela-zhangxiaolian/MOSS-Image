@@ -97,6 +97,7 @@ into MOSS-Image's positive prompt; for Layout, use the same generation dimension
 - [Showcase](#showcase)
 - [Citation](#citation)
 - [License and acknowledgements](#license)
+- [Star History](#star-history)
 
 <a id="models"></a>
 
@@ -289,3 +290,15 @@ If you use MOSS-Image in your research, please cite this repository:
 The standalone pipeline code is provided under the [Apache License 2.0](LICENSE).
 
 We thank the Diffusers, Qwen and FLUX teams.
+
+<a id="star-history"></a>
+
+## ⭐ Star History
+
+<a href="https://www.star-history.com/?repos=OpenMOSS%2FMOSS-Image&amp;type=date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=OpenMOSS/MOSS-Image&amp;type=date&amp;theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=OpenMOSS/MOSS-Image&amp;type=date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=OpenMOSS/MOSS-Image&amp;type=date" />
+  </picture>
+</a>

@@ -94,6 +94,7 @@
 - [Showcase](#showcase)
 - [引用](#citation)
 - [许可与致谢](#license)
+- [Star History](#star-history)
 
 <a id="models"></a>
 
@@ -279,3 +280,15 @@ MOSS-Image 使用布局控制生成的结果。
 推理代码采用 [Apache License 2.0](LICENSE)。
 
 感谢 Diffusers、Qwen 和 FLUX 团队。
+
+<a id="star-history"></a>
+
+## ⭐ Star History
+
+<a href="https://www.star-history.com/?repos=OpenMOSS%2FMOSS-Image&amp;type=date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=OpenMOSS/MOSS-Image&amp;type=date&amp;theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=OpenMOSS/MOSS-Image&amp;type=date" />
+    <img alt="Star 增长历史" src="https://api.star-history.com/chart?repos=OpenMOSS/MOSS-Image&amp;type=date" />
+  </picture>
+</a>
