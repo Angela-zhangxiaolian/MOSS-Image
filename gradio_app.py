@@ -397,6 +397,9 @@ def build_app(
     initial_assets = asset_snapshot()
     with gr.Blocks(title="MOSS-Image", analytics_enabled=False) as app:
         logo = app.serve_static_file(UI_ASSETS / "logo.svg")
+        modelscope_base = app.serve_static_file(UI_ASSETS / "modelscope-base.svg")
+        modelscope_sft = app.serve_static_file(UI_ASSETS / "modelscope-sft.svg")
+        feishu_badge = app.serve_static_file(UI_ASSETS / "feishu-builders.svg")
         gr.HTML(
             '<header style="text-align:center;padding:20px 0 24px">'
             '<div style="display:flex;align-items:center;justify-content:center;gap:20px">'
@@ -412,6 +415,12 @@ def build_app(
             'href="https://github.com/OpenMOSS/MOSS-Image">GitHub</a>'
             '<a style="color:var(--body-text-color-subdued);text-decoration:none" '
             'href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base">Base weights</a>'
+            '<a target="_blank" rel="noopener noreferrer" href="https://modelscope.cn/models/openmoss/MOSS-Image-Base">'
+            f'<img alt="ModelScope · MOSS-Image-Base" src="{html.escape(modelscope_base["url"].lstrip("/"), quote=True)}"></a>'
+            '<a target="_blank" rel="noopener noreferrer" href="https://modelscope.cn/models/openmoss/MOSS-Image-SFT">'
+            f'<img alt="ModelScope · MOSS-Image-SFT" src="{html.escape(modelscope_sft["url"].lstrip("/"), quote=True)}"></a>'
+            '<a target="_blank" rel="noopener noreferrer" href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=7a3m2007-815f-409b-9c3d-a4129f5c058e">'
+            f'<img alt="MOSS-Builders Feishu Community" src="{html.escape(feishu_badge["url"].lstrip("/"), quote=True)}"></a>'
             '<a style="color:var(--body-text-color-subdued);text-decoration:none" '
             'href="https://github.com/OpenMOSS/MOSS-Image/blob/main/README_ZH.md">文档</a>'
             '<a style="color:var(--body-text-color-subdued);text-decoration:none" '

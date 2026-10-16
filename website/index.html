@@ -37,9 +37,12 @@
           <a class="button" href="https://github.com/OpenMOSS/MOSS-Image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"/></svg>Code</a>
           <a class="button" href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>MOSS-Image-Base</a>
           <a class="button" href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>MOSS-Image-SFT</a>
+          <a class="button" href="https://modelscope.cn/models/openmoss/MOSS-Image-Base"><img src="assets/modelscope-icon.png" alt="" width="17" height="17">ModelScope · Base</a>
+          <a class="button" href="https://modelscope.cn/models/openmoss/MOSS-Image-SFT"><img src="assets/modelscope-icon.png" alt="" width="17" height="17">ModelScope · SFT</a>
           <a class="button" href="https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h12l4 4v14H4Zm11 0v5h5M8 12h8m-8 4h8"/></svg>User Guide</a>
           <a class="button" href="https://x.com/Open_MOSS">Follow OpenMOSS ↗</a>
           <a class="button" href="https://qm.qq.com/q/hphM7VhaDu">QQ Group · 755535143 ↗</a>
+          <a class="button" href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=7a3m2007-815f-409b-9c3d-a4129f5c058e"><img src="assets/feishu-icon.svg" alt="" width="17" height="17">Feishu · MOSS-Builders ↗</a>
           <a class="button" href="paper/MOSS_Image_Technical_Report.pdf">Technical Report ↗</a>
         </div>
       </div>
@@ -135,7 +138,7 @@ image.save("layout.png")</code></pre></details>
     <section id="models" class="section container">
       <h2>Models</h2>
       <p class="section-description">The two checkpoints share the same architecture and sampling interface.</p>
-      <div class="table-wrap"><table><thead><tr><th scope="col">Model</th><th scope="col">Description</th><th scope="col">Weights</th></tr></thead><tbody><tr><th scope="row">MOSS-Image-Base</th><td>Base text-to-image model</td><td><a href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base">Hugging Face ↗</a></td></tr><tr><th scope="row">MOSS-Image-SFT</th><td>Fine-tuned from MOSS-Image-Base on curated data</td><td><a href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT">Hugging Face ↗</a></td></tr></tbody></table></div>
+      <div class="table-wrap"><table><thead><tr><th scope="col">Model</th><th scope="col">Description</th><th scope="col">Weights</th></tr></thead><tbody><tr><th scope="row">MOSS-Image-Base</th><td>Base text-to-image model</td><td><a href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base">Hugging Face ↗</a> · <a href="https://modelscope.cn/models/openmoss/MOSS-Image-Base"><img src="assets/modelscope-icon.png" alt="" width="14" height="14"> ModelScope ↗</a></td></tr><tr><th scope="row">MOSS-Image-SFT</th><td>Fine-tuned from MOSS-Image-Base on curated data</td><td><a href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT">Hugging Face ↗</a> · <a href="https://modelscope.cn/models/openmoss/MOSS-Image-SFT"><img src="assets/modelscope-icon.png" alt="" width="14" height="14"> ModelScope ↗</a></td></tr></tbody></table></div>
       <p class="table-note">Weights: Apache-2.0. The pipeline code and third-party components retain their respective licenses.</p>
       <h3 class="comparison-heading">Base vs. SFT</h3>
       <p class="section-description">In this example, SFT produces clearer text grouping and a more organized whiteboard layout.</p>
