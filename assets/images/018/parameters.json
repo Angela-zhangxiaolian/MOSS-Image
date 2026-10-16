@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "model_repo": "OpenMOSS-Team/MOSS-Image-Base",
+  "model": "MOSS-Image-Base",
+  "parameters": {
+    "prompt": "A candid classroom photograph, slightly off-center, with a worn dark green chalkboard filling most of the frame. Uneven window light, soft shadows, chalk dust, eraser streaks, subtle camera grain. Visible board frame and chalk tray, a blurred desk corner in the foreground. Natural, slightly irregular white chalk handwriting—not polished typography or a flat blackboard graphic. Keep all text sharp, fully visible, and free of glare.\n\nThe chalkboard reads exactly:\n\n\"MOSS-Transcribe-Diarize is our flagship SOTA model family\nfor turning real-world long-form audio into structured,\nspeaker- aware transcripts in one pass. Instead of stitching\ntogether separate ASR and diarization systems, these\nmodels jointly perform speech transcription and speaker\ndiarization, producing time-aligned text with precise\ntimestamps and consistent speaker labels such as [S01], [S02], and beyond.\"",
+    "negative_prompt": "worst quality, bad anatomy, ugly face",
+    "height": 768,
+    "width": 1360,
+    "steps": 50,
+    "cfg": 3,
+    "shift": 6,
+    "num_images": 1,
+    "seed": 2051794908,
+    "uncond_skip_layers": "",
+    "slg_layers": "",
+    "slg_scale": 0,
+    "slg_start": 0,
+    "slg_stop": 1,
+    "max_sequence_length": 4096,
+    "offload": "none",
+    "compile_transformer": false
+  },
+  "sampler": "Euler",
+  "recovered_from": "Running Space gallery and example selection",
+  "image": "image.png"
+}

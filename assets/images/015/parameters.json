@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "model_repo": "OpenMOSS-Team/MOSS-Image-Base",
+  "model": "MOSS-Image-Base",
+  "parameters": {
+    "prompt": "生成4:3黑白悬疑电影剧照，室内一位成年侦探坐在桌边。画面左侧可见半幅百叶窗，窗外强硬光透进来，在人物脸部、白衬衫和后墙上形成同一组方向一致的窄条阴影；条纹随表面转折与遮挡发生合理变化，不能像屏幕贴纸一样跨过人物外轮廓直接贴到所有物体上。人物一半面部明亮，另一半较暗，眼睛仍可见。桌上一只黑色有线电话，听筒放在座机上。无烟雾、无霓虹、无文字、无黑边。",
+    "negative_prompt": "worst quality, bad anatomy",
+    "height": 880,
+    "width": 1184,
+    "steps": 50,
+    "cfg": 5,
+    "shift": 5,
+    "num_images": 1,
+    "seed": 6,
+    "uncond_skip_layers": "26",
+    "slg_layers": "",
+    "slg_scale": 0,
+    "slg_start": 0,
+    "slg_stop": 1,
+    "max_sequence_length": 4096,
+    "offload": "none",
+    "compile_transformer": false
+  },
+  "sampler": "Euler",
+  "recovered_from": "Running Space gallery and example selection",
+  "image": "image.png"
+}

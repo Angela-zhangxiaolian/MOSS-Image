@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "model_repo": "OpenMOSS-Team/MOSS-Image-Base",
+  "model": "MOSS-Image-Base",
+  "parameters": {
+    "prompt": "An original, museum-quality white marble sculpture of Artoria Pendragon (Saber) from Fate, conceived with the anatomical discipline, monumental presence, and exquisite craftsmanship of Renaissance sculpture, without copying Michelangelo's David, its pose, or its composition.\n\nPreserve Saber's unmistakable character design: finely carved bangs framing her face, hair gathered into her characteristic braided bun with a ribbon, a distinctive upward-curving forelock rendered as a carefully supported marble curl, and a calm, resolute expression conveying quiet chivalric dignity. Translate her iconic armored dress into monochrome marble: an articulated breastplate, sculpted pauldrons, armored gauntlets, a fitted high-neck bodice, and a long, layered skirt with recognizable decorative borders and richly carved fabric folds. The garments ordinarily associated with blue fabric and silver armor are expressed entirely through marble form, texture, and finish, without pigment. She is fully clothed in a modest, non-revealing outfit; beauty emerges through balanced proportions, natural posture, and the interplay of armor and drapery. No animal ears, halo, school uniform, or scarf.\n\nCreate an original, quietly expressive contrapposto: her weight rests on one leg, the other foot advances slightly beneath the skirt, and her head turns gently away from the torso. Her right gauntleted hand rests lightly on the pommel of Excalibur, held vertically beside her right leg with its tip resting securely on the stone base; her left hand rests naturally beside the skirt. Render Excalibur as a recognizably elegant straight double-edged knightly sword with an ornate crossguard and decorated hilt, carved entirely from the same ivory-white marble, without colored metal or magical glow. Keep the sword visually distinct from her silhouette, with discreet structural connections to the base and neighboring drapery so the sculpture feels physically realizable. Preserve believable anatomy beneath the clothing, relaxed hands, and convincing physical balance. Long folds in the skirt introduce restrained diagonal movement against the crisp planes of the armor.\n\nCarve the entire figure, armor, clothing, and sword from luminous ivory-white marble with subtle natural veining, delicately polished facial planes, crisp edges, and faint chisel traces in recessed folds. Distinguish armor from fabric through smoother reflective stone planes versus softer, gently textured folds, never through paint. No painted skin, plastic surfaces, toy-like proportions, or exaggerated anatomy. Display the complete statue and its stone pedestal in a spacious museum gallery, with warm gray walls and generous negative space. Soft, directional light from high on the left reveals the sculptural volume, with gentle ambient fill preserving shadow detail.\n\nA separate, elegant museum placard beside the pedestal bears the clearly legible text “Artoria Pendragon” and, beneath it, “Saber — Fate”. Vertical 9:16 composition, slightly low viewpoint, restrained perspective, full figure visible from the top of her forelock to the bottom of the pedestal, including the entire sword, with no cropped hair, feet, or base. Photorealistic fine-art sculpture photography: serene, dignified, and materially convincing.",
+    "negative_prompt": "",
+    "height": 1360,
+    "width": 768,
+    "steps": 50,
+    "cfg": 3,
+    "shift": 5,
+    "num_images": 1,
+    "seed": 42,
+    "uncond_skip_layers": "22",
+    "slg_layers": "",
+    "slg_scale": 0,
+    "slg_start": 0,
+    "slg_stop": 1,
+    "max_sequence_length": 4096,
+    "offload": "none",
+    "compile_transformer": false
+  },
+  "sampler": "Euler",
+  "recovered_from": "Running Space gallery and example selection",
+  "image": "image.png"
+}

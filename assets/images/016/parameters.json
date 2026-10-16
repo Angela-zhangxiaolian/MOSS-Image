@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "model_repo": "OpenMOSS-Team/MOSS-Image-Base",
+  "model": "MOSS-Image-Base",
+  "parameters": {
+    "prompt": "A hotel room lit only by a warm bedside lamp. The white sheets on the double bed are rumpled, pillows stacked against the headboard. A cosplayer portraying Hanako from Blue Archive lies on her side along the edge of the bed, long pink hair spilling over one shoulder, a loose braid on the other, a white flower clip still pinned near her ear. Green contacts meet the camera. A thin wire-and-LED halo glows pale pink above her head.\nShe is still in Hanako’s white sailor uniform: short sleeves, pink neck ribbon, gold buttons. The pleated skirt rides a little from the pose, showing the tops of white knee-high socks. The small jacket-style bag and prop gun rest at the foot of the bed, out of her hands. One hand props her cheek; the other lightly tugs the end of the ribbon. Knees together, calves crossed, torso leaning slightly forward. Lips parted, ears faintly flushed, gaze held on the lens as if the flash caught her mid-pose.\nBackground is only beige curtains, an unopened bottle of water on the nightstand, and the brown school bag on the carpet.",
+    "negative_prompt": "",
+    "height": 1184,
+    "width": 880,
+    "steps": 50,
+    "cfg": 3,
+    "shift": 5,
+    "num_images": 1,
+    "seed": 42,
+    "uncond_skip_layers": "24",
+    "slg_layers": "",
+    "slg_scale": 0,
+    "slg_start": 0,
+    "slg_stop": 1,
+    "max_sequence_length": 4096,
+    "offload": "none",
+    "compile_transformer": false
+  },
+  "sampler": "Euler",
+  "recovered_from": "Running Space gallery and example selection",
+  "image": "image.png"
+}

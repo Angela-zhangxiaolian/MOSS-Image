@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "model_repo": "OpenMOSS-Team/MOSS-Image-Base",
+  "model": "MOSS-Image-Base",
+  "parameters": {
+    "prompt": "A young anime woman, Kazusa from Blue Archive, stands still at the edge of a crowded Tokyo crosswalk outside a busy train station on a damp, overcast dusk. Her short dark hair with soft magenta inner highlights frames her face, cat ears perked slightly beneath her distinctive glowing pink halo. She wears an oversized charcoal wool coat over a beige knit hoodie, a short pleated black skirt, black crew socks, and scuffed loafers, with a canvas tote bag slung over her shoulder. She holds a wired earphone in one hand as if pausing her music, looking slightly sideways with a quiet, unguarded expression while the evening rush hour flows around her.\n\nIn the immediate foreground, a heavily motion-blurred commuter in a dark coat walks right past the lens, partially framing the edge of the shot and giving it the raw, accidental feel of a candid street photograph. Around and behind Kazusa, a bustling crowd of out-of-focus pedestrians moves across the wet asphalt crosswalk under the muted glow of neon department store signs, traffic signals, and concrete office buildings. The image blends Kazusa’s anime appearance seamlessly into a gritty, photorealistic modern city environment, using natural ambient dusk lighting, shallow depth of field, motion blur on the passing crowd, muted cool tones, and a cinematic sense of stillness amid urban chaos.",
+    "negative_prompt": "watermark, bad anatomy",
+    "height": 1776,
+    "width": 1184,
+    "steps": 50,
+    "cfg": 3,
+    "shift": 5,
+    "num_images": 1,
+    "seed": 3537712559,
+    "uncond_skip_layers": "22",
+    "slg_layers": "",
+    "slg_scale": 0,
+    "slg_start": 0,
+    "slg_stop": 1,
+    "max_sequence_length": 4096,
+    "offload": "none",
+    "compile_transformer": false
+  },
+  "sampler": "Euler",
+  "recovered_from": "Running Space gallery and example selection",
+  "image": "image.png"
+}

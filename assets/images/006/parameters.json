@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "model_repo": "OpenMOSS-Team/MOSS-Image-Base",
+  "model": "MOSS-Image-Base",
+  "parameters": {
+    "prompt": "{\"scene_type\":\"Chinese literature textbook photograph\",\"gen_brief\":\"A realistic editorial photograph of an open Chinese senior-school literature textbook on a warm wooden study desk. The printed lesson presents Wang Xizhi's Lanting preface in authentic simplified Chinese, with carefully typeset classical prose and compact explanatory footnotes. Use a nearly overhead camera, natural window light, subtle paper translucency, gently curved pages, and soft binding shadows. The image should feel like an ordinary student's clean textbook snapshot rather than a designed poster, with crisp readable printing and restrained, believable photographic texture.\",\"elements\":[{\"type\":\"obj\",\"salience\":\"primary\",\"identity\":\"Open Chinese literature textbook\",\"shape\":\"Ivory uncoated paper, gently bowed binding, fine black textbook printing, faint reverse-side ink, layered page edges, understated blue lesson accents.\",\"colors\":[{\"color\":\"Ivory paper\",\"hex\":\"#F5F0E5\"},{\"color\":\"Printing black\",\"hex\":\"#292824\"},{\"color\":\"Muted textbook blue\",\"hex\":\"#496878\"}],\"bbox\":[-685,-544,691,508]},{\"type\":\"text\",\"text\":\"古代散文阅读\",\"bbox\":[-616,-324,-582,-99],\"shape\":\"Small muted-blue Chinese sans-serif characters, restrained tracking and natural square proportions.\",\"is_watermark\":false},{\"type\":\"text\",\"text\":\"兰亭集序\",\"bbox\":[-542,-116,-465,281],\"shape\":\"Bold black Song-style Chinese title, prominent triangular serifs, evenly spaced natural-width characters.\",\"is_watermark\":false},{\"type\":\"text\",\"text\":\"王羲之\",\"bbox\":[-446,14,-410,152],\"shape\":\"Small centered black Song-style characters with airy spacing.\",\"is_watermark\":false},{\"type\":\"text\",\"text\":\"永和九年，岁在癸丑，暮春之初，会于会稽山阴\\n之兰亭，修禊事也。群贤毕至，少长咸集。此地有崇\\n山峻岭，茂林修竹，又有清流激湍，映带左右，引以\\n为流觞曲水，列坐其次。虽无丝竹管弦之盛，一觞一\\n咏，亦足以畅叙幽情。是日也，天朗气清，惠风和畅。\\n仰观宇宙之大，俯察品类之盛，所以游目骋怀，足以\\n极视听之娱，信可乐也。\",\"bbox\":[-357,-319,-90,436],\"shape\":\"Black Song-style body text, regular square glyphs, generous leading, first-line indentation, subtle paper curvature.\",\"is_watermark\":false},{\"type\":\"text\",\"text\":\"夫人之相与，俯仰一世。或取诸怀抱，悟言一室\\n之内；或因寄所托，放浪形骸之外。虽趣舍万殊，静\\n躁不同，当其欣于所遇，暂得于己，快然自足，不知\\n老之将至；及其所之既倦，情随事迁，感慨系之矣。\\n向之所欣，俯仰之间，已为陈迹，犹不能不以之兴怀；\\n况修短随化，终期于尽！古人云：“死生亦大矣。”\\n岂不痛哉！\",\"bbox\":[-60,-319,207,436],\"shape\":\"Matching black Song-style body text, first-line indentation, measured line spacing and crisp punctuation.\",\"is_watermark\":false},{\"type\":\"text\",\"text\":\"注释\\n〔永和九年〕公元353年。永和，东晋穆帝年号。\\n〔会稽山阴〕今浙江绍兴。\\n〔修禊〕古代于暮春临水举行的祓除不祥的仪式。\\n〔流觞曲水〕把酒杯浮在弯曲的水道中，任其漂流，\\n停在谁的面前，谁就取来饮酒。\\n〔悟言〕面对面交谈。“悟”同“晤”。\",\"bbox\":[330,-319,546,427],\"shape\":\"Compact black Song-style footnotes; slightly bolder heading, hanging entries, smaller natural-width glyphs and even leading.\",\"is_watermark\":false},{\"type\":\"text\",\"text\":\"42\",\"bbox\":[615,41,643,82],\"shape\":\"Tiny black serif page number with native numeral proportions.\",\"is_watermark\":false},{\"type\":\"obj\",\"salience\":\"secondary\",\"identity\":\"Wooden desktop\",\"note\":\"Provides an everyday study setting.\",\"bbox\":[-728,-544,728,544],\"shape\":\"Matte honey-brown wood with restrained grain, minor surface wear and soft natural shadows.\",\"colors\":[{\"color\":\"Warm wood\",\"hex\":\"#B58B61\"},{\"color\":\"Dark wood grain\",\"hex\":\"#896547\"}]},{\"type\":\"obj\",\"salience\":\"secondary\",\"identity\":\"Narrow facing-page strip and binding gutter\",\"note\":\"Makes the photographed page clearly part of an open textbook.\",\"bbox\":[-673,-544,667,-354],\"shape\":\"Curved ivory page sliver, dark soft binding crease, subtly curled paper and thin layered edges; no readable printing.\",\"colors\":[{\"color\":\"Ivory paper\",\"hex\":\"#F5F0E5\"},{\"color\":\"Gutter shadow\",\"hex\":\"#B6AA97\"}]},{\"type\":\"obj\",\"salience\":\"secondary\",\"identity\":\"Textbook running-header rule\",\"note\":\"Restrained printed lesson styling.\",\"bbox\":[-567,-321,-563,435],\"shape\":\"Very thin, straight muted-blue printed rule with slight paper-grain absorption.\",\"colors\":[{\"color\":\"Muted textbook blue\",\"hex\":\"#496878\"}]},{\"type\":\"obj\",\"salience\":\"secondary\",\"identity\":\"Footnote separator\",\"note\":\"Distinguishes annotations from the classical prose.\",\"bbox\":[298,-319,302,-54],\"shape\":\"Short hairline black printing, clean and understated.\",\"colors\":[{\"color\":\"Printing black\",\"hex\":\"#292824\"}]}],\"must_not\":[\"not a calligraphy scroll or handwritten manuscript\",\"not a promotional poster or infographic\",\"not modern prose substituted for the classical passage\"],\"palette\":[\"#F5F0E5\",\"#292824\",\"#B58B61\",\"#496878\",\"#B6AA97\"],\"bbox_coord_space\":\"abs_centralized\"}",
+    "negative_prompt": "",
+    "height": 1456,
+    "width": 1088,
+    "steps": 50,
+    "cfg": 5,
+    "shift": 5,
+    "num_images": 1,
+    "seed": 1946227359,
+    "uncond_skip_layers": "22",
+    "slg_layers": "",
+    "slg_scale": 0,
+    "slg_start": 0,
+    "slg_stop": 1,
+    "max_sequence_length": 4096,
+    "offload": "none",
+    "compile_transformer": false
+  },
+  "sampler": "Euler",
+  "recovered_from": "Running Space gallery and example selection",
+  "image": "image.png"
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "model_repo": "OpenMOSS-Team/MOSS-Image-Base",
+  "model": "MOSS-Image-Base",
+  "parameters": {
+    "prompt": "A cinematic, photorealistic nighttime scene of a small neighborhood convenience store on a quiet, rain-soaked street. The warmly illuminated storefront occupies the right half of the frame, while the street recedes into soft mist on the left. A lone young adult wearing a charcoal coat stands just outside the entrance beneath a transparent umbrella, seen in three-quarter rear view, gazing through the glass. Amber light reveals shelves inside and spills across the sidewalk, mingling with muted teal neon reflections in shallow puddles. Individual raindrops bead on the umbrella and catch the storefront light; fine streaks of rain remain visible against the darker street. A slightly weathered bicycle leans beside the entrance. Distant apartment windows and a few out-of-focus streetlights add depth without distracting from the figure. Eye-level wide shot, 35mm lens aesthetic, natural perspective, balanced negative space, restrained teal-and-amber color grading, realistic wet asphalt and glass textures, soft highlight bloom, subtle film grain, and gentle atmospheric depth. Quiet, intimate, and nostalgic rather than dramatic; believable lighting, with the figure clearly silhouetted against the warm window. No prominent readable lettering, logos, or watermarks.",
+    "negative_prompt": "worst quality, bad anatomy",
+    "height": 944,
+    "width": 1680,
+    "steps": 50,
+    "cfg": 3,
+    "shift": 5,
+    "num_images": 1,
+    "seed": 42,
+    "uncond_skip_layers": "26",
+    "slg_layers": "",
+    "slg_scale": 0,
+    "slg_start": 0,
+    "slg_stop": 1,
+    "max_sequence_length": 4096,
+    "offload": "none",
+    "compile_transformer": false
+  },
+  "sampler": "Euler",
+  "recovered_from": "Running Space gallery and example selection",
+  "image": "image.png"
+}

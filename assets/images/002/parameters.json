@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "model_repo": "OpenMOSS-Team/MOSS-Image-Base",
+  "model": "MOSS-Image-Base",
+  "parameters": {
+    "prompt": "{\"summary\":{},\"items\":[{\"bbox\":[-824,-472,824,472],\"label\":\"panel\",\"palette\":[\"#D4AF37\",\"#FFFFFF\",\"#B22222\",\"#87CEEB\",\"#2F4F4F\"],\"caption\":\"The entire composition is a single frame representing a live stream interface, blending a high-quality photographic portrait of a woman in Hanfu with dynamic social media UI overlays.\",\"tags\":[\"live stream\",\"Hanfu\",\"Chinese aesthetics\",\"UI overlay\"]},{\"bbox\":[-622,-300,403,383],\"label\":\"subject\",\"palette\":[\"#FFFFFF\",\"#F5F5DC\",\"#8B0000\",\"#2F4F4F\"],\"tags\":[\"woman\",\"Hanfu\",\"traditional clothing\",\"elegant\"]},{\"bbox\":[-345,-83,-72,206],\"label\":\"object\",\"palette\":[\"#FFFDD0\",\"#B22222\",\"#556B2F\"],\"caption\":\"A traditional round Chinese hand fan held by the woman. It is made of pale cream paper with a painting of red plum blossoms and black calligraphic text.\"},{\"bbox\":[-314,-17,-177,51],\"label\":\"text\",\"caption\":\"Black ink calligraphy written on the surface of the round fan.\",\"tags\":[\"calligraphy\",\"Chinese text\"],\"text\":\"浮生若梦\\n但愿长安\"},{\"bbox\":[-190,-300,403,383],\"label\":\"object\",\"palette\":[\"#FFFFFF\",\"#ADD8E6\",\"#8B0000\"],\"caption\":\"Highly detailed Hanfu consisting of a white outer robe with silver embroidery and light blue translucent sleeves, over a deep red inner garment. The material looks like silk and chiffon, draping softly.\"},{\"bbox\":[-622,-217,-243,128],\"label\":\"object\",\"caption\":\"Intricate gold hairpins and floral ornaments, including white and red blossoms, decorating the woman's complex hairstyle.\",\"tags\":[\"hairpins\",\"floral ornaments\",\"gold\"]},{\"bbox\":[212,177,534,322],\"label\":\"object\",\"caption\":\"A large, ornate golden lantern with intricate metal carvings, emitting a warm, bright glow. It sits on a wooden table in the foreground.\",\"tags\":[\"lantern\",\"warm light\",\"golden\"]},{\"bbox\":[365,-48,551,143],\"label\":\"object\",\"caption\":\"A traditional golden bronze incense burner with tripod legs and decorative carvings, positioned centrally on the wooden table.\",\"tags\":[\"incense burner\",\"bronze\",\"antique\"]},{\"bbox\":[463,-421,632,-99],\"label\":\"object\",\"caption\":\"A traditional Chinese bound book with a navy blue cover and light-colored pages, lying flat on the wooden table.\"},{\"bbox\":[-378,242,-163,354],\"label\":\"object\",\"palette\":[\"#ADD8E6\",\"#B22222\",\"#228B22\"],\"tags\":[\"vase\",\"plum blossoms\",\"ceramic\"]},{\"bbox\":[-824,-472,-703,472],\"label\":\"panel\",\"tags\":[\"UI\",\"header\",\"navigation\"]},{\"bbox\":[-816,-389,-761,-271],\"label\":\"text\",\"palette\":[\"#FFFFFF\"],\"caption\":\"Profile information in the top left corner.\",\"text\":\"清月如故\\n286.6万本场点赞\"},{\"bbox\":[-744,268,-672,445],\"label\":\"text\",\"palette\":[\"#FFFFFF\"],\"caption\":\"Event title in the top right corner.\",\"tags\":[\"UI text\",\"event\"],\"text\":\"国风盛典\\n山河入梦 与君共赏\"},{\"bbox\":[-30,-460,203,-152],\"label\":\"panel\",\"palette\":[\"#FFFFFF\",\"#FFC0CB\",\"#FF69B4\"],\"caption\":\"A series of translucent white gift notifications appearing on the left side, showing user names and the gifts they sent.\"},{\"bbox\":[-14,-393,42,-168],\"label\":\"text\",\"palette\":[\"#000000\"],\"caption\":\"First gift notification text.\",\"text\":\"墨染江南\\n送出 玫瑰 x 99\"},{\"bbox\":[56,-393,111,-178],\"label\":\"text\",\"tags\":[\"UI text\",\"gift\"],\"text\":\"长安故人\\n送出 天灯 x 1\"},{\"bbox\":[133,-393,190,-152],\"label\":\"text\",\"tags\":[\"UI text\",\"gift\"],\"text\":\"山河共月\\n送出 心动 x 520\"},{\"bbox\":[240,-446,488,67],\"label\":\"panel\",\"caption\":\"The live chat feed area at the bottom left, showing messages from viewers with their level badges and avatars.\"},{\"bbox\":[250,-435,445,60],\"label\":\"text\",\"tags\":[\"UI text\",\"chat\"],\"text\":\"Lv.28 琴声晚：姐姐好美 ❤️\\nLv.16 一纸相思：这氛围太绝了!\\nLv.32 月下听风：仿佛梦回大唐...\\nLv.18 南风知我意：想和姐姐一起看梅花 🌸\\nLv.25 清梦星河：国风yyds!\"},{\"bbox\":[706,-472,824,472],\"label\":\"panel\",\"palette\":[\"#000000\",\"#FF69B4\",\"#FFFFFF\"],\"caption\":\"The bottom interaction bar, including a text input field, share button, gift button, and like button.\"},{\"bbox\":[-689,-438,-260,-344],\"label\":\"text\",\"palette\":[\"#FFFFFF\"],\"tags\":[\"decorative text\",\"vertical\"],\"text\":\"一扇风华\\n一梦千年\\n\\n人间烟火里\\n总有诗意栖居\"},{\"bbox\":[-650,410,-367,452],\"label\":\"text\",\"palette\":[\"#FFFFFF\"],\"tags\":[\"decorative text\",\"vertical\"],\"text\":\"绣屏藏春\\n桃李人间\"},{\"bbox\":[619,-432,696,-250],\"label\":\"text\",\"tags\":[\"decorative text\",\"poetry\"],\"text\":\"愿以一盏灯火\\n换你三千次停留\"},{\"bbox\":[713,248,780,442],\"label\":\"text\",\"caption\":\"Branding text in the bottom right corner.\",\"tags\":[\"UI text\",\"branding\"],\"text\":\"—— 中国风 · 直播间\\nCHINESE AESTHETICS\\nLIVE\"}],\"bbox_coord_space\":\"abs_centralized\",\"bbox_format\":\"yxyx\"}",
+    "negative_prompt": "worst quality, low quality, blurry, jpeg artifacts",
+    "height": 1680,
+    "width": 944,
+    "steps": 50,
+    "cfg": 5,
+    "shift": 5,
+    "num_images": 1,
+    "seed": 42,
+    "uncond_skip_layers": "22",
+    "slg_layers": "",
+    "slg_scale": 0,
+    "slg_start": 0,
+    "slg_stop": 1,
+    "max_sequence_length": 4096,
+    "offload": "none",
+    "compile_transformer": false
+  },
+  "sampler": "Euler",
+  "recovered_from": "Running Space gallery and example selection",
+  "image": "image.png"
+}

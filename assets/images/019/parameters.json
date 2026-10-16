@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "model_repo": "OpenMOSS-Team/MOSS-Image-Base",
+  "model": "MOSS-Image-Base",
+  "parameters": {
+    "prompt": "masterpiece, best quality, highres, most attractive face\n生成一个穿JK短裙的少女，长得非常非常好看的那种类型的。",
+    "negative_prompt": "worst quality, low quality, blurry, jpeg artifacts, bad anatomy",
+    "height": 1184,
+    "width": 880,
+    "steps": 50,
+    "cfg": 5,
+    "shift": 5,
+    "num_images": 1,
+    "seed": 42,
+    "uncond_skip_layers": "22",
+    "slg_layers": "",
+    "slg_scale": 0,
+    "slg_start": 0,
+    "slg_stop": 1,
+    "max_sequence_length": 4096,
+    "offload": "none",
+    "compile_transformer": false
+  },
+  "sampler": "Euler",
+  "recovered_from": "Running Space gallery and example selection",
+  "image": "image.png"
+}

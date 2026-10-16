@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MOSS-Image by OpenMOSS: text-to-image generation with native text-driven layout control. Model weights, inference code, and documentation.">
+  <title>MOSS-Image | Text-to-Image Generation with Native Layout Control</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css?v=showcases-only-5">
+  <script src="assets/app.js?v=showcases-only-5" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#"><img src="assets/logo.svg" alt="" width="36" height="36"><span>MOSS-Image</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#layout">Layout Control</a>
+        <a href="#models">Models</a>
+        <a href="#usage">Quick Start</a>
+        <a href="https://github.com/OpenMOSS/MOSS-Image">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <img class="hero-logo" src="assets/lockup-light.svg" alt="MOSS-Image" width="520" height="110">
+        <h1>MOSS-Image: Text-to-Image Generation<br class="wide-only"> with Native Layout Control</h1>
+        <p class="authors">OpenMOSS Team</p>
+        <div class="title-divider"></div>
+        <figure class="showcase-figure"><a href="assets/teaser.webp" target="_blank" rel="noopener"><img src="assets/teaser.webp" alt="MOSS-Image-Base and MOSS-Image-SFT teaser"></a></figure>
+        <p class="abstract"><strong>MOSS-Image</strong> is a text-to-image model family from OpenMOSS, comprising a base model and a curated-data fine-tuned model. In addition to natural-language prompts, MOSS-Image supports native text-driven layout generation: objects, rendered text, and their spatial positions can be specified in a JSON prompt. The family combines a compact 5B backbone, prompts of up to 4K tokens, strong text rendering, and versatile anime and photorealistic styles. Python and Gradio interfaces use a shared Diffusers pipeline.</p>
+        <div class="resource-links">
+          <a class="button" href="https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image">Live Demo ↗</a>
+          <a class="button" href="https://github.com/OpenMOSS/MOSS-Image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"/></svg>Code</a>
+          <a class="button" href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>MOSS-Image-Base</a>
+          <a class="button" href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>MOSS-Image-SFT</a>
+          <a class="button" href="https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h12l4 4v14H4Zm11 0v5h5M8 12h8m-8 4h8"/></svg>User Guide</a>
+          <a class="button" href="https://x.com/Open_MOSS">Follow OpenMOSS ↗</a>
+          <a class="button" href="https://qm.qq.com/q/hphM7VhaDu">QQ Group · 755535143 ↗</a>
+          <a class="button" href="paper/MOSS_Image_Technical_Report.pdf">Technical Report ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="section container">
+      <h2>News</h2>
+      <p><time datetime="2026-10-16">October 16, 2026</time> — Introducing <strong>MOSS-Image-Base</strong>, with code and model weights available.</p>
+      <p class="section-description">Layout control, strong text rendering, prompts of up to 4K tokens, anime and photorealistic styles, and a 5B backbone designed for efficient generation and fine-tuning. Training uses heterogeneous GPU platforms.</p>
+    </section>
+
+    <section id="features" class="section container">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <article class="feature"><div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="2"/><path d="m3 17 6-6 5 5 3-3 4 4"/></svg></div><h3>Text-to-Image Generation</h3><p>Generate images from natural-language descriptions with MOSS-Image-Base or MOSS-Image-SFT, using a shared inference interface.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M10 9v12"/></svg></div><h3>Native Layout Control</h3><p>Specify a scene, its objects, and text with a structured JSON prompt. Bounding boxes describe the position and size of individual elements.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8Zm-10 9 10 5 10-5M2 16l10 5 10-5"/></svg></div><h3>Compact, Adaptable Backbone</h3><p>A 5B backbone supports prompts of up to 4K tokens and fine-tuning for custom tasks and domains. Model weights are licensed under Apache-2.0.</p></article>
+      </div>
+    </section>
+
+    <section id="showcase" class="section container">
+      <h2>Showcases</h2>
+      <p class="section-description">Text, illustration, photography and visual design, composed as in the project showcase. Open either image to explore it at full resolution.</p>
+      <div class="showcase-mosaics">
+        <a href="assets/showcase/overview.webp" target="_blank" rel="noopener"><img src="assets/showcase/overview.webp" alt="MOSS-Image examples overview: first showcase composition" loading="lazy" decoding="async"></a>
+        <a href="assets/showcase/overview2.webp" target="_blank" rel="noopener"><img src="assets/showcase/overview2.webp" alt="MOSS-Image examples overview: second showcase composition" loading="lazy" decoding="async"></a>
+      </div>
+    </section>
+
+
+    <section id="layout" class="section container">
+      <h2>Layout-to-Image Generation</h2>
+      <p class="section-description">Layouts also support controlled editing and user-friendly layout tools. Edit text, element descriptions and bounding boxes to adjust image content and composition in a structured way.</p>
+      <p class="section-description">MOSS-Image accepts layout specifications through the same prompt interface used for text-to-image generation. The generated result below illustrates layout control; the JSON example that follows describes a travel poster with a title and a mountain illustration.</p>
+      <figure class="showcase-figure">
+        <a href="assets/showcase/layout-bboxes.svg"><img src="assets/showcase/layout-bboxes.webp" alt="Generated layout-control example with annotated bounding boxes" loading="lazy"></a>
+        <figcaption>Layout-control result from the project README. Open the figure for the vector annotations.</figcaption>
+      </figure>
+      <figure class="layout-figure">
+        <div class="layout-example">
+          <div class="layout-preview">
+            <div class="panel-heading"><span>Input layout</span><span class="dimension">1024 × 1024</span></div>
+            <div class="canvas" aria-label="Input layout: title bounding box above an object bounding box. This is not a generated image.">
+              <span class="axis axis-top">−512</span><span class="axis axis-bottom">+512</span>
+              <div class="box text-box"><span class="box-label">text</span><strong>EXPLORE</strong></div>
+              <div class="box object-box"><span class="box-label">object</span><span class="object-description">Blue mountain<br>illustration</span></div>
+              <span class="origin">+</span>
+            </div>
+            <p class="preview-note">Bounding-box visualization · input specification only</p>
+          </div>
+          <div class="layout-code">
+            <div class="panel-heading"><span>Structured prompt</span><button class="copy-button" data-copy="layout-json" type="button">Copy JSON</button></div>
+            <pre><code id="layout-json">{
+  "summary": {
+    "meta": ["poster"],
+    "canvas": "single",
+    "caption": "A minimalist travel poster with a cream background, a blue mountain illustration, and the title EXPLORE at the top."
+  },
+  "items": [
+    {
+      "label": "text",
+      "caption": "Large dark-blue uppercase title centered at the top.",
+      "text": "EXPLORE",
+      "bbox": [-416, -384, -288, 384]
+    },
+    {
+      "label": "object",
+      "caption": "A flat blue mountain illustration in the lower center.",
+      "bbox": [-192, -288, 384, 288]
+    }
+  ],
+  "bbox_coord_space": "abs_centralized",
+  "bbox_format": "yxyx"
+}</code></pre>
+          </div>
+        </div>
+        <figcaption>Coordinates follow <code>[y_min, x_min, y_max, x_max]</code> and are measured in pixels relative to the canvas center. The diagram visualizes the input layout, not a model-generated result.</figcaption>
+      </figure>
+      <details class="usage-details"><summary>Run this layout example</summary><p>Paste the JSON above into Gradio’s Prompt field and set width and height to 1024. With the Python pipeline below, load the JSON and pass it as the prompt:</p><pre><code>import json
+from pathlib import Path
+
+layout = json.loads(Path("layout.json").read_text())
+image = pipe(
+    json.dumps(layout, ensure_ascii=False),
+    height=1024, width=1024,
+    num_inference_steps=50, guidance_scale=3.0,
+    uncond_skip_layers=[22],
+    generator=torch.Generator("cpu").manual_seed(42),
+).images[0]
+image.save("layout.png")</code></pre></details>
+    </section>
+
+    <section id="models" class="section container">
+      <h2>Models</h2>
+      <p class="section-description">The two checkpoints share the same architecture and sampling interface.</p>
+      <div class="table-wrap"><table><thead><tr><th scope="col">Model</th><th scope="col">Description</th><th scope="col">Weights</th></tr></thead><tbody><tr><th scope="row">MOSS-Image-Base</th><td>Base text-to-image model</td><td><a href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base">Hugging Face ↗</a></td></tr><tr><th scope="row">MOSS-Image-SFT</th><td>Fine-tuned from MOSS-Image-Base on curated data</td><td><a href="https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT">Hugging Face ↗</a></td></tr></tbody></table></div>
+      <p class="table-note">Weights: Apache-2.0. The pipeline code and third-party components retain their respective licenses.</p>
+      <h3 class="comparison-heading">Base vs. SFT</h3>
+      <p class="section-description">In this example, SFT produces clearer text grouping and a more organized whiteboard layout.</p>
+      <div class="model-comparison">
+        <figure><figcaption>MOSS-Image-Base</figcaption><a href="assets/comparison/base.webp" target="_blank" rel="noopener"><img src="assets/comparison/base.webp" alt="Whiteboard generated by MOSS-Image-Base" loading="lazy"></a></figure>
+        <figure><figcaption>MOSS-Image-SFT</figcaption><a href="assets/comparison/sft.webp" target="_blank" rel="noopener"><img src="assets/comparison/sft.webp" alt="Whiteboard generated by MOSS-Image-SFT" loading="lazy"></a></figure>
+      </div>
+    </section>
+
+    <section id="usage" class="section container">
+      <h2>Quick Start</h2>
+      <p class="section-description">Use Python 3.10+ and an NVIDIA GPU. In a dedicated Python environment, install a PyTorch build compatible with your CUDA environment, then run:</p>
+      <div class="code-block"><div class="panel-heading"><span>Installation</span><button class="copy-button" data-copy="quick-start" type="button">Copy commands</button></div><pre><code id="quick-start">git clone https://github.com/OpenMOSS/MOSS-Image.git
+cd MOSS-Image
+python -m venv .venv
+source .venv/bin/activate
+
+pip install -r requirements.txt</code></pre></div>
+      <div class="code-block"><div class="panel-heading"><span>Python · Diffusers</span><button class="copy-button" data-copy="python-start" type="button">Copy Python</button></div><pre><code id="python-start">import torch
+from diffusers import DiffusionPipeline
+
+pipe = DiffusionPipeline.from_pretrained(
+    &quot;OpenMOSS-Team/MOSS-Image-Base&quot;,
+    custom_pipeline=&quot;pipeline_moss_image&quot;,
+    trust_remote_code=True,
+    torch_dtype={&quot;default&quot;: torch.bfloat16, &quot;vae&quot;: torch.float32},
+)
+pipe.scheduler = type(pipe.scheduler).from_config(pipe.scheduler.config)
+pipe.to(&quot;cuda&quot;)
+image = pipe(
+    &quot;A wide view of a refrigerator beside a kitchen counter with a fruit bowl. A small sticky note on the refrigerator door is handwritten in Chinese:“\n记得买牛奶和鸡蛋！\n牛奶两盒，鸡蛋一打。\n顺便带一袋面包。”&quot;,
+    height=1456,
+    width=1456,
+    num_inference_steps=50,
+    guidance_scale=3.0,
+    uncond_skip_layers=[22],
+    generator=torch.Generator(&quot;cpu&quot;).manual_seed(42),
+).images[0]
+image.save(&quot;refrigerator_note.png&quot;)</code></pre></div>
+      <p class="usage-note">For prompts, layout inputs and LoRA training guidance, see the <a href="https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md">English user guide</a> or <a href="https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE_ZH.md">中文用户指南</a>.</p>
+      <details class="usage-details"><summary>Run Gradio locally</summary><pre><code>pip install -e '.[ui]'
+python gradio_app.py --model OpenMOSS-Team/MOSS-Image-Base</code></pre><p>Advanced settings offer GPU resident, Component, and Sequential memory modes. If memory is insufficient, select Sequential or reduce image size. Compile DiT is disabled by default and unavailable in Sequential mode.</p></details>
+      <details class="usage-details"><summary>Recommended sampling settings</summary><dl class="settings"><div><dt>Sampler</dt><dd>Flow-matching Euler</dd></div><div><dt>Steps / CFG / shift</dt><dd>50 / 3 / 5</dd></div><div><dt>Layer skipping</dt><dd>Negative-branch skipping at layer 22</dd></div><div><dt>Negative prompt</dt><dd>Empty in the Python API</dd></div></dl></details>
+      <div id="comfyui">
+        <h3>ComfyUI</h3>
+        <p class="usage-note">Install the native plugin by searching for <strong>MOSS-Image</strong> in <strong>ComfyUI Manager</strong>. Integration into the official ComfyUI repository is in progress.</p>
+        <p class="usage-note"><a href="https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README.md">Installation and usage ↗</a> · <a href="https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/moss-image/example_workflows/moss-image.json">Example workflow ↗</a></p>
+      </div>
+    </section>
+
+    <section id="prompt-enhancer" class="section container">
+      <h2>Prompt Enhancer</h2>
+      <p class="section-description">Turn image ideas into detailed captions or spatial Layout prompts with the MOSS-Image Prompt Enhancer skill, designed for GPT-6-family agents with local file and Python tools.</p>
+      <p>The bundled script converts pixel-coordinate drafts into compact JSON with integer centered coordinates. It prepares prompts without calling an image-generation service.</p>
+      <ol>
+        <li>Install the <a href="https://github.com/OpenMOSS/MOSS-Image/tree/main/skills/moss-image-prompt-enhancer">skill folder</a> in your agent’s skills directory.</li>
+        <li>Invoke <code>$moss-image-prompt-enhancer</code> with your image idea, caption or Layout output requirements, and canvas dimensions.</li>
+        <li>Paste the compiled result into MOSS-Image’s positive prompt. For Layout prompts, use the same generation dimensions as the draft.</li>
+      </ol>
+      <p class="usage-note"><a href="https://github.com/OpenMOSS/MOSS-Image/blob/main/skills/moss-image-prompt-enhancer/SKILL.md">Prompt Enhancer instructions ↗</a></p>
+    </section>
+
+    <section id="citation" class="section container">
+      <h2>Citation</h2>
+      <p class="section-description">If you use MOSS-Image in your research, please cite the project repository.</p>
+      <div class="code-block"><div class="panel-heading"><span>BibTeX</span><button class="copy-button" data-copy="bibtex" type="button">Copy citation</button></div><pre><code id="bibtex">@misc{mossimage2026,
+  title = {MOSS-Image},
+  author = {{OpenMOSS Team}},
+  year = {2026},
+  howpublished = {\url{https://github.com/OpenMOSS/MOSS-Image}}
+}</code></pre></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 OpenMOSS Team</span><div><a href="https://github.com/OpenMOSS/MOSS-Image#license">Acknowledgements</a><a href="https://github.com/OpenMOSS/MOSS-Image/blob/main/LICENSE">Code License</a></div></div></footer>
+  <div class="toast" id="copy-status" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+name: Publish ComfyUI plugin
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-comfyui
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install publishing tool
+        run: python -m pip install comfy-cli
+
+      - name: Publish plugin
+        working-directory: comfyui/moss-image
+        env:
+          REGISTRY_ACCESS_TOKEN: ${{ secrets.REGISTRY_ACCESS_TOKEN }}
+        run: |
+          test -n "$REGISTRY_ACCESS_TOKEN" || {
+            echo "Set the REGISTRY_ACCESS_TOKEN repository secret before publishing."
+            exit 1
+          }
+          comfy --skip-prompt --no-enable-telemetry node publish \
+            --token "$REGISTRY_ACCESS_TOKEN"

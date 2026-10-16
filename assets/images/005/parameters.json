@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "model_repo": "OpenMOSS-Team/MOSS-Image-Base",
+  "model": "MOSS-Image-Base",
+  "parameters": {
+    "prompt": "多层折叠式纸雕立体绘本，放在一张书桌上，背景纯净突出主题，比例 3:2 横版。翻开的跨页呈现「哪吒闹海」的场景：脚踏风火轮的少年、翻涌的层叠海浪与龙宫剪影，所有元素皆可精细折叠组合，呈现逼真细腻的纸张折叠质感与多层景深。构图统一采用正面视角，整体视觉梦幻唯美，色彩缤纷绚丽，充满奇幻生动的故事氛围。",
+    "negative_prompt": "worst quality, bad anatomy, ugly face",
+    "height": 1024,
+    "width": 1536,
+    "steps": 50,
+    "cfg": 5,
+    "shift": 5,
+    "num_images": 1,
+    "seed": 2570432421,
+    "uncond_skip_layers": "26",
+    "slg_layers": "",
+    "slg_scale": 0,
+    "slg_start": 0,
+    "slg_stop": 1,
+    "max_sequence_length": 4096,
+    "offload": "none",
+    "compile_transformer": false
+  },
+  "sampler": "Euler",
+  "recovered_from": "Running Space gallery and example selection",
+  "image": "image.png"
+}
