@@ -397,9 +397,9 @@ def build_app(
     initial_assets = asset_snapshot()
     with gr.Blocks(title="MOSS-Image", analytics_enabled=False) as app:
         logo = app.serve_static_file(UI_ASSETS / "logo.svg")
-        modelscope_base = app.serve_static_file(UI_ASSETS / "modelscope-base.svg")
-        modelscope_sft = app.serve_static_file(UI_ASSETS / "modelscope-sft.svg")
-        feishu_badge = app.serve_static_file(UI_ASSETS / "feishu-builders.svg")
+        modelscope_base = app.serve_static_file(UI_ASSETS / "modelscope-base-badge.svg")
+        modelscope_sft = app.serve_static_file(UI_ASSETS / "modelscope-sft-badge.svg")
+        feishu_badge = app.serve_static_file(UI_ASSETS / "feishu-builders-badge.svg")
         gr.HTML(
             '<header style="text-align:center;padding:20px 0 24px">'
             '<div style="display:flex;align-items:center;justify-content:center;gap:20px">'
