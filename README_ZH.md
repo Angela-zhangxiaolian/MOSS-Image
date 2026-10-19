@@ -18,6 +18,8 @@
     &nbsp;
     <a href="paper/MOSS_Image_Technical_Report.pdf"><img alt="Technical Report" src="https://img.shields.io/badge/📄%20Paper-Technical_Report-b31b1b?style=flat-square"></a>
     &nbsp;
+    <a href="https://arxiv.org/abs/2610.23374"><img alt="arXiv: 2610.23374" src="https://img.shields.io/badge/arXiv-2610.23374-b31b1b?style=flat-square&amp;logo=arxiv&amp;logoColor=white"></a>
+    &nbsp;
     <a href="https://x.com/Open_MOSS"><img alt="Follow OpenMOSS on X" src="https://img.shields.io/badge/Follow-OpenMOSS-000000?style=flat-square&amp;logo=x&amp;logoColor=white"></a>
     &nbsp;
     <a href="https://qm.qq.com/q/hphM7VhaDu"><img alt="MOSS-Image QQ 交流群：755535143" src="https://img.shields.io/badge/QQ-755535143-12B7F5?style=flat-square&amp;logo=qq&amp;logoColor=white"></a>
@@ -34,6 +36,10 @@
 <a id="news"></a>
 
 ## 动态
+
+- **[2026-10-19]** 📄 [MOSS-Image 技术报告](https://arxiv.org/abs/2610.23374)已在 arXiv 公开。
+
+- **[2026-10-16]** 🚀 [SGLang](https://docs.sglang.io/cookbook/diffusion/OpenMOSS/MOSS-Image)、[vLLM-Omni](https://recipes.vllm.ai/OpenMOSS-Team/MOSS-Image-Base) 和 [ComfyUI](https://huggingface.co/Comfy-Org/MOSS-Image) 均已提供 MOSS-Image 的发布首日（Day-0）支持。
 
 - **[2026-10-16]** 🎉 **MOSS-Image-Base** 和 **MOSS-Image-SFT** 正式发布！代码和模型权重已开放。
 
