@@ -270,14 +270,17 @@ MOSS-Image 使用布局控制生成的结果。
 
 ## 📝 引用
 
-如果你在研究中使用 MOSS-Image，请引用本仓库：
+如果你在研究中使用 MOSS-Image，请引用我们的技术报告：
 
 ```bibtex
-@misc{mossimage2026,
-  title = {MOSS-Image},
-  author = {{OpenMOSS Team}},
-  year = {2026},
-  howpublished = {\url{https://github.com/OpenMOSS/MOSS-Image}}
+@misc{ai2026mossimagetechnicalreport,
+      title={MOSS-Image Technical Report},
+      author={MOSI. AI},
+      year={2026},
+      eprint={2610.23374},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.23374},
 }
 ```
 

@@ -280,14 +280,17 @@ the Python API, pass `json.dumps(layout, ensure_ascii=False)` as the prompt stri
 
 ## 📝 Citation
 
-If you use MOSS-Image in your research, please cite this repository:
+If you use MOSS-Image in your research, please cite our technical report:
 
 ```bibtex
-@misc{mossimage2026,
-  title = {MOSS-Image},
-  author = {{OpenMOSS Team}},
-  year = {2026},
-  howpublished = {\url{https://github.com/OpenMOSS/MOSS-Image}}
+@misc{ai2026mossimagetechnicalreport,
+      title={MOSS-Image Technical Report},
+      author={MOSI. AI},
+      year={2026},
+      eprint={2610.23374},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.23374},
 }
 ```
 
