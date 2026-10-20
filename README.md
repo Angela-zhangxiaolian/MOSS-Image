@@ -36,9 +36,9 @@
 
 ## News
 
-- **[2026-10-20]** 🛠️ [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) now supports full fine-tuning and LoRA training for **MOSS-Image-Base** and **MOSS-Image-SFT**. See the [training documentation](https://github.com/modelscope/DiffSynth-Studio/blob/main/docs/en/Model_Details/MOSS-Image.md#model-training) and [example scripts](https://github.com/modelscope/DiffSynth-Studio/tree/main/examples/moss_image/model_training).
+- **[2026-10-19]** 📄 The [MOSS-Image Technical Report](https://arxiv.org/abs/2610.23374) is now available on arXiv. If you find our work useful, please support us with an [upvote on Hugging Face Papers](https://huggingface.co/papers/2610.23374)! 🤗
 
-- **[2026-10-19]** 📄 The [MOSS-Image Technical Report](https://arxiv.org/abs/2610.23374) is now available on arXiv.
+- **[2026-10-18]** 🛠️ [KohakuMossTrainer](https://github.com/KohakuBlueleaf/KohakuMossTrainer) has been released, offering full fine-tuning and LyCORIS training (including LoRA) for **MOSS-Image-Base** and **MOSS-Image-SFT**. It features extensive optimizer support, mixed-precision training (BF16/FP16/FP8/MXFP8/INT8), multi-GPU training (DDP/FSDP/pipeline parallelism), optimized kernels, and CPU offloading, enabling adapter training with as little as **6GB VRAM**. It supports Windows, Linux, NVIDIA GPUs (SM70–SM120), and Intel Arc GPUs. See the [GitHub repository](https://github.com/KohakuBlueleaf/KohakuMossTrainer) for details.
 
 - **[2026-10-16]** 🚀 MOSS-Image has day-0 support in [SGLang](https://docs.sglang.io/cookbook/diffusion/OpenMOSS/MOSS-Image), [vLLM-Omni](https://recipes.vllm.ai/OpenMOSS-Team/MOSS-Image-Base), and [ComfyUI](https://huggingface.co/Comfy-Org/MOSS-Image).
 
@@ -54,6 +54,20 @@
   - ⚡ **Compact and efficient:** Efficient image generation with a 5B backbone.
   - 🖥️ **Heterogeneous GPU training**: Trained on alternative GPU platforms.
 
+<a id="community-projects"></a>
+
+## Community projects
+
+- [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) now supports full fine-tuning and LoRA training for **MOSS-Image-Base** and **MOSS-Image-SFT**. See the [training documentation](https://github.com/modelscope/DiffSynth-Studio/blob/main/docs/en/Model_Details/MOSS-Image.md#model-training) and [example scripts](https://github.com/modelscope/DiffSynth-Studio/tree/main/examples/moss_image/model_training).
+
+- [MOSS-Image-SFT-DeBand](https://huggingface.co/MATLOWAI/MOSS-Image-SFT-DeBand) by **MATLOWAI** provides community LoRAs to reduce vertical color banding in **MOSS-Image-SFT**, together with ComfyUI preset workflows. See the model card for examples, settings, and the trade-offs between stripe reduction and changes to image details.
+
+- [MOSS-Image-SFT-8-steps-dmd](https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd) by **lodestones** is a community 8-step DMD distillation of **MOSS-Image-SFT**, with LoRA adapters for ComfyUI. See the model card for the latest checkpoints and usage recommendations.
+
+- [MOSS-Image-FP16-fixed](https://huggingface.co/KBlueLeaf/MOSS-Image-FP16-fixed) by **KBlueLeaf** provides FP16-compatible transformer weights for **MOSS-Image-Base** and **MOSS-Image-SFT**, using residual-stream rescaling to improve overflow headroom. Diffusers and ComfyUI formats are available; see the model card for loading instructions and adapter compatibility.
+
+- [ComfyUI-Spectrum-MOSS](https://github.com/Rkkss/ComfyUI-Spectrum-MOSS) by **Rkkss** adds Spectrum-style hidden-state forecasting to accelerate MOSS-Image sampling in ComfyUI, with manual and experimental adaptive nodes. See the repository for recommended sampling settings and examples.
+
 <a id="user-guide"></a>
 
 ## User guide
@@ -66,12 +80,11 @@ LoRA training guidance.
 
 ## ComfyUI
 
-This repository provides a native MOSS-Image plugin for ComfyUI.
+MOSS-Image is supported natively in [ComfyUI](https://github.com/Comfy-Org/ComfyUI/pull/17095). Update to ComfyUI master/nightly with MOSS-Image support and install its dependencies, then use the built-in loaders with [ComfyUI-format weights](https://huggingface.co/Comfy-Org/MOSS-Image). No MOSS-Image plugin is required for this workflow.
 
-Search for **MOSS-Image** in **ComfyUI Manager** to install the plugin.
-We are actively working toward integration into the official ComfyUI repository.
+The repository plugin remains available for loading a local Hugging Face / Diffusers directory and for existing plugin workflows.
 
-[Installation and usage](comfyui/README.md) · [Example workflow](comfyui/moss-image/example_workflows/moss-image.json)
+[Installation and usage](comfyui/README.md) · [HF loader plugin workflow](comfyui/moss-image/example_workflows/moss-image.json)
 
 <a id="prompt-enhancer"></a>
 
@@ -93,6 +106,7 @@ into MOSS-Image's positive prompt; for Layout, use the same generation dimension
 ## Contents
 
 - [News](#news)
+- [Community projects](#community-projects)
 - [User guide](#user-guide)
 - [ComfyUI](#comfyui)
 - [Prompt enhancer skill](#prompt-enhancer)
